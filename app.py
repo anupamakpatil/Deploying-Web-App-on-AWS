@@ -27,7 +27,7 @@ def submitted_form():
     if request.method=='POST':
         task = request.form['task']
         cur = mysql.connection.cursor()
-        cur.execute('USE todo;')
+        cur.execute('USE todo_webapp;')
         cur.execute('INSERT INTO tasks (task) VALUES (%s)',[task])
         mysql.connection.commit()
         flash("Your task Successfully Saved.")
