@@ -6,10 +6,10 @@ app= Flask(__name__)
 app.secret_key="cc_project"
 
 
-app.config['MYSQL_HOST'] = 'database-1.ckuhiu36dj7n.us-east-1.rds.amazonaws.com'
-app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'root123'
-app.config['MYSQL_DB'] = 'todo'
+app.config['MYSQL_HOST'] = 'db-newtodo.cyxz4abwws6v.us-west-1.rds.amazonaws.com'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'todo_webapp'
 
 mysql = MySQL(app)
 
